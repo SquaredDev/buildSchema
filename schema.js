@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');;
+// const mongoose = require('mongoose');;
 
 const starshipSchema = new mongoose.Schema({
   id: {type:Number, required:true, unique:true },
@@ -8,7 +8,7 @@ const starshipSchema = new mongoose.Schema({
     port:String,
     planet:String,
     system:String
-    }
+  },
   buildYear: Date,
   launchYear: Date,
   registry: {type:Number, required:true, unique:true},
